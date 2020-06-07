@@ -6,10 +6,10 @@
 '''
 @Author: Ryan Schachte
 @Publication-Date: 1/12/17 5:23 PM
-@Description: 
+@Description:
 
 The stable matching algorithm seeks to solve the problem of finding a stable match between two sets of equal size
-given a list of preferences for each element. 
+given a list of preferences for each element.
 
 We can define "matching" and "stable" by the following definitions.
 
@@ -38,7 +38,7 @@ def get_sorted_rankings(rankings):
 #	'lizzy': 	['ryan', 'blake', 'josh', 'connor'],
 #	'sarah': 	['ryan', 'blake', 'connor', 'josh'],
 #	'zoey':  	['connor', 'josh', 'ryan', 'blake'],
-#	'daniella':	['ryan', 'josh', 'connor', 'blake'] 
+#	'daniella':	['ryan', 'josh', 'connor', 'blake']
 #}
 
 
@@ -116,9 +116,8 @@ def stable_matching(preferred_rankings_mentor, preferred_rankings_mentee):
     return tentative_engagements
 
 
-def load_data():
-    return pandas.read_excel("../data/testdata9.xlsx",
-                             header=[0, 1])  # CHANGE THIS FOR PROD IF NEEDED
+def load_data(data_path):
+    return pandas.read_excel(data_path, header=[0, 1])
 
 
 def parse_data(df):
@@ -149,7 +148,7 @@ def parse_data(df):
 
 
 def main():
-    df = load_data()
+    df = load_data("../data/testdata9.xlsx")
     preferred_rankings_mentor, preferred_rankings_mentee = parse_data(df)
     print(f"PREFERRED_RANKINGS_MENTOR: {preferred_rankings_mentor}")
     print(f"PREFERRED_RANKINGS_MENTEE: {preferred_rankings_mentee}")
