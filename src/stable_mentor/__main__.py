@@ -1,5 +1,5 @@
-from stable_mentor import load_data, stable_matching
-from stable_mentor.data_loader import parse_data
+from stable_mentor import stable_matching
+from stable_mentor.data_loader import load_data, parse_data
 
 
 def main():
