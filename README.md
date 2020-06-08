@@ -9,7 +9,7 @@ Algorithms for matching Mentors to Mentees.
 ```
 cd src/
 pipenv install
-pipenv run python -m stable_mator
+pipenv run python -m stable_mentor
 ```
 
 ## Testing
