@@ -9,14 +9,16 @@ Algorithms for matching Mentors to Mentees.
 ```
 cd src/
 pipenv install
-pipenv run python -m stable_matching.py
+pipenv run python -m stable_mator
 ```
 
 ## Testing
 
+Run these from the repo root (where this README is):
+
 ```
 pipenv install --dev
-pytest tests
+pipenv run pytest tests
 ```
 
 ## TODO
