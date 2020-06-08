@@ -19,7 +19,6 @@ Matching: Mapping from the elements of one set to the elements of another set
 Stable: No element A of the first set that prefers an element B of the second set over its current partner
         such that element B prefers element A over its current partner.
 """
-from stable_mentor.data_loader import load_data
 
 
 def init_free_mentor(preferred_rankings_mentor):
