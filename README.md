@@ -4,22 +4,33 @@ Algorithms for matching Mentors to Mentees.
 
 ## Running
 
-[Currently](#TODO), this expects a data file in `data/testdata9.xlsx`, and to be run from `src`:
+Install runtime dependencies:
 
 ```
-cd src/
 pipenv install
-pipenv run python -m stable_mentor
+```
+
+To process a data file (there is an example data file in `data/testdata9.xlsx`):
+
+```
+pipenv run python -m stable_mentor data/testdata9.xlsx
 ```
 
 ## Testing
 
-Run these from the repo root (where this README is):
+Install dev dependencies (including all the runtime dependencies and pytest):
 
 ```
 pipenv install --dev
+```
+
+Run the tests from the repo root (where this README is):
+
+```
 pipenv run pytest tests
 ```
+
+It should report the number passed, and (if all is working) not report failures.
 
 ## TODO
 * [*] Remove global vars
@@ -27,4 +38,4 @@ pipenv run pytest tests
 * [ ] Add tests
 * [ ] add CI
 * [ ] Add license
-* [ ] Take data path at command line
+* [*] Take data path at command line
